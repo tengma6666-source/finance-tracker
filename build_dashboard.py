@@ -8,6 +8,7 @@ import urllib.request
 TICKERS = {
     "A股": [
         {"symbol": "601899.SS", "name": "紫金矿业", "ticker": "601899", "unit": "¥"},
+        {"symbol": "600879.SS", "name": "航天电子", "ticker": "600879", "unit": "¥"},
         {"symbol": "000001.SS", "name": "上证指数", "ticker": "000001", "unit": ""},
     ],
     "港股": [
@@ -174,7 +175,7 @@ def build_html(data, update_time):
 </head>
 <body>
 <div class="header">
-  <h1>📊 财经看板</h1>
+  <h1>📊 小马哥的财经看板</h1>
   <div class="header-time"><span class="live-dot"></span>实时更新 · {update_time}</div>
 </div>
 <div class="grid">
